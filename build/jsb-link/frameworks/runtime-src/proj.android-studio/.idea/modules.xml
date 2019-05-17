@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://C:/CocosCreator/resources/cocos2d-x/cocos/platform/android/libcocos2dx/libcocos2dx.iml" filepath="C:/CocosCreator/resources/cocos2d-x/cocos/platform/android/libcocos2dx/libcocos2dx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proj.android-studio.iml" filepath="$PROJECT_DIR$/proj.android-studio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/start_project.iml" filepath="$PROJECT_DIR$/app/start_project.iml" />
+    </modules>
+  </component>
+</project>
