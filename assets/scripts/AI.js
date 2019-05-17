@@ -86,15 +86,25 @@ cc.Class({
                     var nearStar;
                     var dis = 5000;
                     console.log(this.bg.children.length);
+                    let posi = this.SelfMonster.node.getPosition();
                         for(let i = 0;i<this.bg.children.length;i++){
                         let star = this.bg.children[i];
-                        let dis2 = mathUtil.getDistance(this.SelfMonster.node.getPosition(),star.getPosition());
+                        let dis2 = mathUtil.getDistance(posi,star.getPosition());
                         if(dis2 < dis){
                             dis = dis2;
                             nearStar = star;
                         };
                     }  
-                var newVer2 = mathUtil.turnByAngle(this.SelfMonster.node.getPosition(),nearStar.getPosition(),0,2,false);
+                    if(mathUtil.getDistance(posi,this.obstacle1.getPosition())<200){
+                        var newVer2 = mathUtil.turnByAngle(this.SelfMonster.node.getPosition(),this.obstacle1.getPosition(),90,2,false);
+                    }else if(mathUtil.getDistance(posi,this.obstacle2.getPosition())<200){
+                        var newVer2 = mathUtil.turnByAngle(this.SelfMonster.node.getPosition(),this.obstacle2.getPosition(),90,2,false);
+                    }else if(mathUtil.getDistance(posi,this.obstacle3.getPosition())<200){
+                        var newVer2 = mathUtil.turnByAngle(this.SelfMonster.node.getPosition(),this.obstacle3.getPosition(),90,2,false);
+                    }else{
+                        var newVer2 = mathUtil.turnByAngle(this.SelfMonster.node.getPosition(),nearStar.getPosition(),0,2,false);
+                    }
+                
                 }
                 this.SelfMonster.move(newVer2.x,newVer2.y);
             }
