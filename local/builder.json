@@ -1,6 +1,6 @@
 {
-  "actualPlatform": "android",
-  "apiLevel": "android-28",
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
   "appABIs": [
     "armeabi-v7a",
     "arm64-v8a",
@@ -13,7 +13,7 @@
   "keystoreAliasPassword": "",
   "keystorePassword": "",
   "keystorePath": "",
-  "platform": "android",
+  "platform": "wechatgame",
   "previewHeight": "720",
   "previewWidth": "1280",
   "sourceMaps": false,

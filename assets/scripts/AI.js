@@ -20,21 +20,7 @@ cc.Class({
         obstacle1:cc.Node,
         obstacle2:cc.Node,
         obstacle3:cc.Node,
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -42,9 +28,9 @@ cc.Class({
     // onLoad () {},
     setMap(game){
         this.GameWorld = game;
-        this.obstacle1 = game.Component('game').obstacle1;
-        this.obstacle2 = game.Component('game').obstacle2;
-        this.obstacle3 = game.Component('game').obstacle3;
+        this.obstacle1 = game.getComponent('game').obstacle1;
+        this.obstacle2 = game.getComponent('game').obstacle2;
+        this.obstacle3 = game.getComponent('game').obstacle3;
     },
     setEnemy(enemy){
         this.Enemy = enemy;
@@ -70,16 +56,16 @@ cc.Class({
                     }else{
                         let posi = this.SelfMonster.node.getPosition();
                         let angle = 180;
-                        if(pos.x > 590 || pos.x <= -590 || pos.y < -590 || pos.y > 590){
-                            if(mathUtil.getAngle(this.GameWorld.getPosition(),posi)
-                                <mathUtil.getAngle(this.GameWorld.getPosition(),this.Enemy.getPosition())){
+                        if(posi.x > 590 || posi.x <= -590 || posi.y < -590 || posi.y > 590){
+                            if(mathUtil.getAngle(this.GameWorld.node.getPosition(),posi)
+                                <mathUtil.getAngle(this.GameWorld.node.getPosition(),this.Enemy.getPosition())){
                                     angle +=90;
-                                }else{
-                                    angle -=90;
-                                }
-                        }else{
-                            var newVer2 = mathUtil.turnByAngle(posi,this.Enemy.getPosition(),angle,2.8,false);
+                            }else{
+                                angle -=90;
+                            }
                         }
+                            var newVer2 = mathUtil.turnByAngle(posi,this.Enemy.getPosition(),angle,2.8,false);
+                        
                         
                     }
                 }else{
