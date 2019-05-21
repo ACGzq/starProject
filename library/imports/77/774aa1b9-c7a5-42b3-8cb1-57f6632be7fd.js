@@ -16,8 +16,9 @@ cc._RF.push(module, '774aaG5x6VCs4yxV/ZjK+f9', 'star');
 
 // let mvs = require("Matchvs");
 // let Glb = require("../Glb");
-var objectPool = require("util/objectPool");
-var mathUtil = require("util/mathUtil");
+var objectPool = require("objectPool");
+var mathUtil = require("mathUtil");
+
 cc.Class({
     extends: cc.Component,
 

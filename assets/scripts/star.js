@@ -10,8 +10,9 @@
 
 // let mvs = require("Matchvs");
 // let Glb = require("../Glb");
-let objectPool = require("util/objectPool");
-let mathUtil = require("util/mathUtil");
+let objectPool = require("objectPool");
+let mathUtil = require("mathUtil");
+
 cc.Class({
     extends: cc.Component,
 

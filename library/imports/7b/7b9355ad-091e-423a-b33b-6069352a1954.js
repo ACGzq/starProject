@@ -12,8 +12,8 @@ cc._RF.push(module, '7b935WtCR5COrM7YGk1KhlU', 'AI');
 //  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/reference/attributes.html
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-var mathUtil = require("util/mathUtil");
+//  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html 
+var mathUtil = require("mathUtil");
 cc.Class({
     extends: cc.Component,
 

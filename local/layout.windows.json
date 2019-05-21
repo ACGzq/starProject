@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 75,
-      "y": 5,
+      "x": 76,
+      "y": 6,
       "width": 1749,
       "height": 1013,
       "layout": {
@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 449.109375,
+                "height": 449.09375,
                 "type": "panel",
                 "width": 267
               },
@@ -27,7 +27,7 @@
                 "children": [
                   "assets"
                 ],
-                "height": 441.109375,
+                "height": 441.125,
                 "type": "panel",
                 "width": 267
               }
@@ -45,7 +45,7 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 542.140625,
+                    "height": 540.125,
                     "type": "panel",
                     "width": 737.984375
                   },
@@ -54,12 +54,12 @@
                     "children": [
                       "node-library"
                     ],
-                    "height": 542.140625,
+                    "height": 540.125,
                     "type": "panel",
                     "width": 321
                   }
                 ],
-                "height": 542.140625,
+                "height": 540.125,
                 "type": "dock-h",
                 "width": 1060.984375
               },
@@ -69,7 +69,7 @@
                   "console",
                   "timeline"
                 ],
-                "height": 348.078125,
+                "height": 350.078125,
                 "type": "panel",
                 "width": 1060.984375
               }
@@ -101,7 +101,8 @@
         "cocos-services",
         "scene"
       ]
-    }
+    },
+    "window-1558344087835": {}
   },
   "panels": {
     "package-asset.import": {
@@ -129,15 +130,21 @@
       "height": 539
     },
     "builder": {
-      "x": 45,
-      "y": 91,
+      "x": 471,
+      "y": 118,
       "width": 670,
-      "height": 739
+      "height": 726
     },
     "store": {
       "x": 552,
       "y": 190,
       "width": 816,
+      "height": 639
+    },
+    "runtime-dev-tools": {
+      "x": 492,
+      "y": 284,
+      "width": 916,
       "height": 639
     }
   }

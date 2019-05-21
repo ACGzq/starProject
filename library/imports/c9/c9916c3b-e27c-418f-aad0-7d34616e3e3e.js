@@ -13,8 +13,10 @@ cc._RF.push(module, 'c9916w74nxBj6rQfTRhbj4+', 'game');
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-var mathUtil = require("util/mathUtil");
-var objectPool = require("util/objectPool");
+
+var mathUtil = require("mathUtil");
+
+var objectPool = require("objectPool");
 cc.Class({
     extends: cc.Component,
 

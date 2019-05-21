@@ -7,8 +7,9 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-let objectPool = require("util/objectPool");
-let mathUtil = require("util/mathUtil");
+let objectPool = require("objectPool");
+let mathUtil = require("mathUtil");
+
 let AI = require("AI");
 cc.Class({
     extends: cc.Component,

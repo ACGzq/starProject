@@ -7,7 +7,7 @@
     "x86"
   ],
   "buildPath": "./build",
-  "debug": false,
+  "debug": true,
   "embedWebDebugger": false,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",

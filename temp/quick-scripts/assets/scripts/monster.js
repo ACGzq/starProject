@@ -13,8 +13,9 @@ cc._RF.push(module, '3162bdHhQJA9YTYc0BKHZMl', 'monster', __filename);
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-var objectPool = require("util/objectPool");
-var mathUtil = require("util/mathUtil");
+var objectPool = require("objectPool");
+var mathUtil = require("mathUtil");
+
 var AI = require("AI");
 cc.Class({
     extends: cc.Component,
